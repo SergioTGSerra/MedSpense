@@ -71,7 +71,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             <li><a href="#home" class="active">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#services">Services</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#portfolio">Team</a></li>
                             <li><a href="#blog">Blog</a></li>
                             <li><a href="#contact">Contact</a></li>
                             
@@ -128,15 +128,16 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     <div class="w-100 text-center text-lg-start">
                                         
                                         <h1 class="hs-title-10 mb-40 mb-sm-20 wow fadeInUp">
-                                            Create your beautiful web presence
-                                            <span class="visually-hidden">easily, faster, smart</span>
-                                            <span data-period="3250" data-type='[ "easily", "faster", "smart"]' class="typewrite color-primary-1" aria-hidden="true"><span class="wrap"></span></span>
+                                            Proteja a saude dos utentes e da instituição médica.
+                                            Seja
+                                            <span class="visually-hidden">saudável, eficiente, smart</span>
+                                            <span data-period="3250" data-type='[ "saudável", "eficiente", "smart"]' class="typewrite color-primary-1" aria-hidden="true"><span class="wrap"></span></span>
                                         </h1>
                                         
                                         <div class="row">
                                             <div class="col-lg-10">
                                                 <p class="section-descr mb-50 mb-sm-40 wow fadeInUp" data-wow-delay="0.15s">
-                                                    We are an award winning studio specializing in  design and engineering. Our mission is to make work process meaningful.
+                                                    Faça a gestão finançeira da sua instituição médica de forma eficiente e segura.  
                                                 </p>
                                             </div>
                                         </div>
@@ -144,10 +145,10 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                         <div class="local-scroll wow fadeInUp wch-unset" data-wow-delay="0.3s" data-wow-offset="0">
                                             
                                             <a href="#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10">
-                                                <span>Start a project</span>
+                                                <span>Eu quero</span>
                                             </a>
                                             
-                                            <a href="#about" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">Learn more <i class="mi-arrow-right size-24"></i></a>
+                                            <a href="#about" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">Contacta-nos <i class="mi-arrow-right size-24"></i></a>
                                             
                                         </div>
                                         
@@ -220,15 +221,15 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 <div class="w-100 wow fadeInUp">
                                     
                                     <h2 class="section-caption-slick mb-30 mb-sm-20">
-                                        About Studio
+                                        About MedSpence
                                     </h2>
                                     
                                     <h3 class="section-title mb-30">
-                                        We believe in creatives with a&nbsp;passion to smart design.
+                                        Inovação em gestão financeira na área da saúde.
                                     </h3>
                                     
                                     <p class="text-gray mb-40">
-                                        Etiam fermentum vehicula faucibus. Praesent ullamcorper urna id arcu molestie scelerisque. Sed imperdiet tristique mauris et faucibus. Maecenas semper augue non fringilla placerat. Curabitur luctus erat sit amet ultricies aliquam. Donec dictum convallis mauris et maximus. Nullam massa arcu, porta quis felis et, eleifend varius quam.
+                                        Somos uma equipe apaixonada pela transformação da gestão financeira na área da saúde. Combinando experiência em tecnologia e profundo conhecimento do setor, o MedSpence nasceu para simplificar a vida dos profissionais de saúde e instituições médicas, permitindo-lhes focar no que realmente importa: o cuidado com os pacientes.
                                     </p>         
                                     
                                     <!-- Features List -->
@@ -240,7 +241,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 <i class="mi-check"></i>
                                             </div>
                                             <div class="features-list-text">
-                                                Lorem ipsum dolor sit amet,consectetur adipiscing.
+                                                Experiência no Setor de Saúde.
                                             </div>
                                         </div>
                                         <!-- End Features List Item -->
@@ -251,7 +252,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 <i class="mi-check"></i>
                                             </div>
                                             <div class="features-list-text">
-                                                Vivamus hendrerit eros vitae tincidunt vulputate.
+                                                Compromisso com a Inovação.
                                             </div>
                                         </div>
                                         <!-- End Features List Item -->
@@ -262,7 +263,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 <i class="mi-check"></i>
                                             </div>
                                             <div class="features-list-text">
-                                                Aenean at bibendum enim. In auctor consectetur urna.
+                                                Segurança dos Dados como Prioridade.
                                             </div>
                                         </div>
                                         <!-- End Features List Item -->
@@ -273,7 +274,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 <i class="mi-check"></i>
                                             </div>
                                             <div class="features-list-text">
-                                                Proin ut gravida lorem, quis scelerisque metus.
+                                                Suporte Excepcional ao Cliente.
                                             </div>
                                         </div>
                                         <!-- End Features List Item -->
@@ -284,7 +285,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     <div class="local-scroll wch-unset">
                                             
                                         <a href="#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10">
-                                            <span>Start a project</span>
+                                            <span>I want</span>
                                         </a>
                                         
                                         <a href="#services" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">Learn more <i class="mi-arrow-right size-24"></i></a>
