@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- Change the value of lang="en" attribute if your website's language is not English.
 You can find the code of your language here - https://www.w3schools.com/tags/ref_language_codes.asp -->
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         
-        <title>MedSpense &mdash; Take Care of You With MedSpense</title>
+        <title>MedSpense &mdash; {{ __('Take Care of You With MedSpense') }}</title>
         <meta name="description" content="Resonance &mdash; One & Multi Page Creative Template">  
         <meta charset="utf-8">
         <meta name="author" content="https://themeforest.net/user/bestlooker/portfolio">
@@ -68,11 +68,11 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist scroll-nav local-scroll justify-content-end">                            
-                            <li><a href="#home" class="active">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#team">Team</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#home" class="active">{{ __('Home') }}</a></li>
+                            <li><a href="#about">{{ __('About Us') }}</a></li>
+                            <li><a href="#services">{{ __('Services') }}</a></li>
+                            <li><a href="#team">{{ __('Team') }}</a></li>
+                            <li><a href="#contact">{{ __('Contact Us') }}</a></li>
                             
                             <li class="desktop-nav-display">
                                 <div class="vr mt-2"></div>
@@ -83,8 +83,8 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 <a href="#" class="mn-has-sub">En <i class="mi-chevron-down"></i></a>
                                 
                                 <ul class="mn-sub to-left">                                    
-                                    <li><a href="#">English</a></li>
-                                    <li><a href="#">Portuguese</a></li>
+                                    <li><a href="{{ url('en') }}">English</a></li>
+                                    <li><a href="{{ url('pt') }}">Português</a></li>
                                 </ul>
                                 
                             </li>
