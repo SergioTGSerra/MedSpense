@@ -651,22 +651,21 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 <div class="post-prev-3-container d-block d-sm-flex">
                                 
                                     <div class="post-prev-3-img">
-                                        <a href="slick-blog-single.html"><img src="images/team/serra.jpg" alt="Add Image Description" class="wow scaleOutIn" /></a>
+                                        <img src="images/team/serra.jpg" alt="Add Image Description" class="wow scaleOutIn" />
                                     </div>
                                     
                                     <div class="post-prev-3-intro">
                                         
-                                        <h4 class="post-prev-3-title"><a href="slick-blog-single.html">Elegant Branding Work for Red Circle by Oddone</a></h4>
+                                        <h4 class="post-prev-3-title">Inovação Imparável</h4>
                                         
                                         <div class="post-prev-3-text">
-                                            Oddone and brand strategist, Caren Williams, worked together with the San Francisco-based startup... 
+                                            Com criatividade e dedicação, Sérgio Serra eleva continuamente os padrões de excelência no desenvolvimento de soluções inovadoras.
                                         </div>
                                         
                                         <div class="post-prev-3-info clearfix">
                                             <div class="float-start">
                                                 <a href="#"><img class="post-prev-3-author-img" width="30" height="30" src="images/team/serra-88.jpg" alt="Image Description" /></a> <a href="#">Sérgio Serra</a>
                                             </div>
-                                            <div class="float-end"><a href="#">August 3</a></div>
                                         </div>
                                         
                                     </div>
@@ -680,15 +679,15 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 <div class="post-prev-3-container d-block d-sm-flex">
                                 
                                     <div class="post-prev-3-img">
-                                        <a href="slick-blog-single.html"><img src="images/team/andre.jpg" alt="Add Image Description" class="wow scaleOutIn" /></a>
+                                        <img src="images/team/andre.jpg" alt="Add Image Description" class="wow scaleOutIn" />
                                     </div>
                                     
                                     <div class="post-prev-3-intro">
                                         
-                                        <h4 class="post-prev-3-title"><a href="slick-blog-single.html">Random Explorations with Cinema 4D and Redshift</a></h4>
+                                        <h4 class="post-prev-3-title">Excelência em Ação</h4>
                                         
                                         <div class="post-prev-3-text">
-                                            Nidia Dias is a 3D designer based in Portugal with an incredible portfolio. From the professional...
+                                            Com paixão e dedicação, André Vale redefine constantemente os limites da excelência no desenvolvimento software com soluções inovadoras.
                                         </div>
                                         
                                         <div class="post-prev-3-info clearfix">
@@ -824,13 +823,13 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 Call Us
                                             </h4>
                                             <div class="ci-text">
-                                                +1 837 652 8800
+                                                +351 258 819 700
                                                 <div class="small">
-                                                    (Monday-Friday: 11am to 12pm)
+                                                    (Monday-Friday: 8am to 18pm)
                                                 </div>
                                             </div>
                                             <div>
-                                                <a href="tel:+18376528800" class="link-hover-anim" data-link-animate="y">Call now <i class="mi-arrow-right size-18"></i></a>
+                                                <a href="tel:+351258819700" class="link-hover-anim" data-link-animate="y">Call now <i class="mi-arrow-right size-18"></i></a>
                                             </div>
                                         </div>
                                         <!-- End Phone -->
@@ -941,7 +940,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             </p>
                             
                             <div class="clearlinks">                                
-                                <strong>T.</strong> <a href="tel:+18376528800">+1 837 652 8800</a>
+                                <strong>T.</strong> <a href="tel:+351258819700">+351 258 819 700</a>
                             </div>
                             
                             <div class="clearlinks">
@@ -1006,12 +1005,11 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 <!-- Footer Widget -->
                                 <div class="col-sm-4 mt-30">
                                     
-                                    <h3 class="fw-title">Legal & Press</h3>
+                                    <h3 class="fw-title">Legal</h3>
                                     
                                     <ul class="fw-menu clearlist">                                     
                                         <li><a href="#">Privacy Policy</a></li>
                                         <li><a href="#">Terms & Conditions</a></li>
-                                        <li><a href="#">Presskit</a></li>
                                     </ul>
                                     
                                 </div>
