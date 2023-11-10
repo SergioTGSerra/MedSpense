@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<!-- Change the value of lang="en" attribute if your website's language is not English.
-You can find the code of your language here - https://www.w3schools.com/tags/ref_language_codes.asp -->
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         
@@ -80,7 +78,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             
                             <!-- Languages -->
                             <li>
-                                <a href="#" class="mn-has-sub">En <i class="mi-chevron-down"></i></a>
+                                <a href="#" class="mn-has-sub">{{ App::currentLocale() == 'pt' ? 'PT' : 'EN' }} <i class="mi-chevron-down"></i></a>
                                 
                                 <ul class="mn-sub to-left">                                    
                                     <li><a href="{{ url('en') }}">English</a></li>
@@ -92,7 +90,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                       
                             <li>
                                 <a href="#contact" class="opacity-1 no-hover">
-                                    <span class="btn btn-mod btn-color-light btn-small btn-circle" data-btn-animate="y">Get in touch</span>
+                                    <span class="btn btn-mod btn-color-light btn-small btn-circle" data-btn-animate="y">{{ __('Get in touch') }}</span>
                                 </a>
                             </li>
                         </ul>                      
@@ -126,16 +124,15 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     <div class="w-100 text-center text-lg-start">
                                         
                                         <h1 class="hs-title-10 mb-40 mb-sm-20 wow fadeInUp">
-                                            Proteja a saude dos utentes e da instituição médica.
-                                            Seja
-                                            <span class="visually-hidden">saudável, eficiente, smart</span>
-                                            <span data-period="3250" data-type='[ "saudável", "eficiente", "smart"]' class="typewrite color-primary-1" aria-hidden="true"><span class="wrap"></span></span>
+                                            {{ __('Protect the health of patients and the medical institution. Be') }}
+                                            <span class="visually-hidden">{{ __('healthy') }}, {{ __('eficient') }}, {{ __('safe') }}</span>
+                                            <span data-period="3250" data-type='[ "{{ __("healthy") }}", "{{ __("efficient") }}", "{{ __("smart") }}"]' class="typewrite color-primary-1" aria-hidden="true"><span class="wrap"></span></span>
                                         </h1>
                                         
                                         <div class="row">
                                             <div class="col-lg-10">
                                                 <p class="section-descr mb-50 mb-sm-40 wow fadeInUp" data-wow-delay="0.15s">
-                                                    Faça a gestão finançeira da sua instituição médica de forma eficiente e segura.  
+                                                    {{ __('Manage the financial aspects of your medical institution efficiently and securely.') }}
                                                 </p>
                                             </div>
                                         </div>
@@ -143,10 +140,10 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                         <div class="local-scroll wow fadeInUp wch-unset" data-wow-delay="0.3s" data-wow-offset="0">
                                             
                                             <a href="#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10">
-                                                <span>Eu quero</span>
+                                                <span>{{ __('Request demo') }}</span>
                                             </a>
                                             
-                                            <a href="#about" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">Contacta-nos <i class="mi-arrow-right size-24"></i></a>
+                                            <a href="#about" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">{{ __('Contact Us') }}<i class="mi-arrow-right size-24"></i></a>
                                             
                                         </div>
                                         
@@ -191,7 +188,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     <div class="scroll-down-1-icon">
                                         <i class="mi-arrow-down"></i>
                                     </div>
-                                    <div class="scroll-down-1-text">Scroll Down</div>
+                                    <div class="scroll-down-1-text">{{ __('Scroll down') }}</div>
                                 </a>
                             </div>                            
                         </div>
@@ -219,15 +216,15 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 <div class="w-100 wow fadeInUp">
                                     
                                     <h2 class="section-caption-slick mb-30 mb-sm-20">
-                                        About MedSpence
+                                        {{ __('About MedSpense') }}
                                     </h2>
                                     
                                     <h3 class="section-title mb-30">
-                                        Inovação em gestão financeira na área da saúde.
+                                        {{ __('Innovation in financial management in the healthcare area.')}}
                                     </h3>
                                     
                                     <p class="text-gray mb-40">
-                                        Somos uma equipe apaixonada pela transformação da gestão financeira na área da saúde. Combinando experiência em tecnologia e profundo conhecimento do setor, o MedSpence nasceu para simplificar a vida dos profissionais de saúde e instituições médicas, permitindo-lhes focar no que realmente importa: o cuidado com os pacientes.
+                                        {{ __('We are a team passionate about transforming financial management in the healthcare area. Combining technology expertise and deep industry knowledge, MedSpense was born to simplify the lives of healthcare professionals and medical institutions, allowing them to focus on what really matters: caring for patients.')}}
                                     </p>         
                                     
                                     <!-- Features List -->
@@ -239,7 +236,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 <i class="mi-check"></i>
                                             </div>
                                             <div class="features-list-text">
-                                                Experiência no Setor de Saúde.
+                                                {{ __('Experience in the Health Sector.')}}
                                             </div>
                                         </div>
                                         <!-- End Features List Item -->
@@ -250,7 +247,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 <i class="mi-check"></i>
                                             </div>
                                             <div class="features-list-text">
-                                                Compromisso com a Inovação.
+                                                {{ __('Commitment to Innovation.')}}
                                             </div>
                                         </div>
                                         <!-- End Features List Item -->
@@ -261,7 +258,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 <i class="mi-check"></i>
                                             </div>
                                             <div class="features-list-text">
-                                                Segurança dos Dados como Prioridade.
+                                                {{ __('Data Security as a Priority.')}}
                                             </div>
                                         </div>
                                         <!-- End Features List Item -->
@@ -272,7 +269,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 <i class="mi-check"></i>
                                             </div>
                                             <div class="features-list-text">
-                                                Suporte Excepcional ao Cliente.
+                                               {{ __('Exceptional Customer Support.')}}
                                             </div>
                                         </div>
                                         <!-- End Features List Item -->
@@ -283,10 +280,10 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     <div class="local-scroll wch-unset">
                                             
                                         <a href="#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10">
-                                            <span>I want</span>
+                                            <span>{{ __('Request demo')}}</span>
                                         </a>
                                         
-                                        <a href="#services" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">Learn more <i class="mi-arrow-right size-24"></i></a>
+                                        <a href="#services" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">{{ __('Contact Us')}}<i class="mi-arrow-right size-24"></i></a>
                                         
                                     </div>                         
                                     
@@ -341,7 +338,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                         100%
                                     </div>
                                     <div class="number-2-descr">
-                                        Transparência Total
+                                        {{ __('Total Transparency')}}
                                     </div>
                                 </div>
                             </div>
@@ -354,7 +351,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                         Super
                                     </div>
                                     <div class="number-2-descr">
-                                        Eficiência Financeira
+                                        {{ __('Efficient Financial Management')}}
                                     </div>
                                 </div>
                             </div>
@@ -367,7 +364,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                         +30k
                                     </div>
                                     <div class="number-2-descr">
-                                        Clientes Satisfeitos
+                                        {{ __('Satisfied Customers')}}
                                     </div>
                                 </div>
                             </div>
@@ -380,7 +377,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                         24 / 7
                                     </div>
                                     <div class="number-2-descr">
-                                        Suporte Personalizado
+                                        {{ __('Personalized Support')}}
                                     </div>
                                 </div>
                             </div>
@@ -404,21 +401,21 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             <div class="col-lg-5 mb-md-60 mb-sm-40">
                                                                     
                                 <h2 class="section-caption-slick mb-30 mb-sm-20">
-                                    Our Services
+                                    {{ __('Our Services')}}
                                 </h2>
                                 
                                 <h3 class="section-title mb-30">
-                                    We provide the best financial management solutions for healthcare.
+                                    {{ __('We provide the best financial management solutions for healthcare.')}}
                                 </h3>
                                 
                                 <p class="section-descr mb-50 mb-sm-40">
-                                    The power of financial efficiency in healthcare with MedSpence.
+                                    {{ __('The power of financial efficiency in healthcare with MedSpence.')}}
                                 </p>
                                 
                                 <div class="local-scroll">
                                         
                                     <a href="#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10">
-                                        <span>Request a demo</span>
+                                        <span>{{ __('Request demo')}}</span>
                                     </a>
                                     
                                 </div>
@@ -434,44 +431,44 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     
                                     <!-- Services Item -->
                                     <div class="col-md-6 mt-50 mt-sm-40 wow fadeIn" data-wow-delay="0">
-                                        <h4 class="services-6-caption">Gestão</h4>
+                                        <h4 class="services-6-caption">{{ __('Management')}}</h4>
                                         <div class="services-6-separator"></div>
-                                        <h5 class="services-6-title">Gestão Simplificada</h5>
+                                        <h5 class="services-6-title">{{ __("Simplified Management")}}</h5>
                                         <p class="services-6-text mb-0">
-                                            Deixe o MedSpence cuidar da sua instituição, liberando tempo para o que realmente importa: a saúde.
+                                            {{ __('Let MedSpence take care of your institution, freeing up time for what really matters: health.')}}
                                         </p>
                                     </div>
                                     <!-- End services Item -->
                                     
                                     <!-- Services Item -->
                                     <div class="col-md-6 mt-50 mt-sm-40 wow fadeIn" data-wow-delay="0.05s">
-                                        <h4 class="services-6-caption">Finanças<aside></aside></h4>
+                                        <h4 class="services-6-caption">{{ __('Financial')}}<aside></aside></h4>
                                         <div class="services-6-separator"></div>
-                                        <h5 class="services-6-title">Faturamento Eficiente</h5>
+                                        <h5 class="services-6-title">{{ __('Efficient Billing')}}</h5>
                                         <p class="services-6-text mb-0">
-                                            Otimize o processo de faturação. Com o MedSpence, você pode gerar faturas precisas e acompanhar os pagamentos de forma eficaz.
+                                            {{ __('Optimize the billing process. With MedSpence, you can generate accurate invoices and track payments effectively.')}}
                                         </p>
                                     </div>
                                     <!-- End services Item -->
                                     
                                     <!-- Services Item -->
                                     <div class="col-md-6 mt-50 mt-sm-40 wow fadeIn" data-wow-delay="0.1s">
-                                        <h4 class="services-6-caption">Relatorios</h4>
+                                        <h4 class="services-6-caption">{{ __('Reports')}}</h4>
                                         <div class="services-6-separator"></div>
-                                        <h5 class="services-6-title">Relatórios Detalhados e Análises em Tempo Real</h5>
+                                        <h5 class="services-6-title">{{ __('Detailed Reports and Real-Time Analysis')}}</h5>
                                         <p class="services-6-text mb-0">
-                                            Obtenha insights valiosos sobre o desempenho financeiro. O MedSpence oferece relatórios detalhados e análises em tempo real para ajudar a tomar decisões informadas.
+                                            {{ __('Get valuable insights into financial performance. MedSpence offers detailed reports and real-time analysis to help make informed decisions.')}}
                                         </p>
                                     </div>
                                     <!-- End services Item -->
                                     
                                     <!-- Services Item -->
                                     <div class="col-md-6 mt-50 mt-sm-40 wow fadeIn" data-wow-delay="0.15s">
-                                        <h4 class="services-6-caption">Integrações</h4>
+                                        <h4 class="services-6-caption">{{ __('Integration')}}</h4>
                                         <div class="services-6-separator"></div>
-                                        <h5 class="services-6-title">Integração Perfeita com Sistemas de Contabilidade</h5>
+                                        <h5 class="services-6-title">{{ __('Seamless Integration with Accounting Systems')}}</h5>
                                         <p class="services-6-text mb-0">
-                                            Conecte o MedSpence com os sistemas de contabilidade que já utiliza. Simplifique o processo de reconciliação e mantenha tudo em sincronia.
+                                            {{ __('Connect MedSpence with the accounting systems you already use. Simplify the reconciliation process and keep everything in sync.')}}
                                         </p>
                                     </div>
                                     <!-- End services Item -->
@@ -491,10 +488,10 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         <div class="row mb-50 mb-sm-50">
                             <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 text-center">
                                 <h2 class="section-title-small mb-20">
-                                    Why choose MedSpence?
+                                    {{ __('Why choose MedSpence?')}}
                                 </h2>
                                 <p class="text-gray mb-0">
-                                    Simplesmente a melhor solução de gestão financeira para profissionais de saúde.
+                                    {{ __('Simply the best financial management solution for healthcare professionals.')}}
                                 </p>
                             </div>
                         </div>
@@ -510,9 +507,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                             <path d="M21.62 20.196c1.055-.922 1.737-2.262 1.737-3.772 0-1.321-.521-2.515-1.357-3.412v-6.946l-11.001-6.066-11 6v12.131l11 5.869 5.468-2.917c.578.231 1.205.367 1.865.367.903 0 1.739-.258 2.471-.676l2.394 3.226.803-.596-2.38-3.208zm-11.121 2.404l-9.5-5.069v-10.447l9.5 4.946v10.57zm1-.001v-10.567l5.067-2.608.029.015.021-.04 4.384-2.256v5.039c-.774-.488-1.686-.782-2.668-.782-2.773 0-5.024 2.252-5.024 5.024 0 1.686.838 3.171 2.113 4.083l-3.922 2.092zm6.833-2.149c-2.219 0-4.024-1.808-4.024-4.026s1.805-4.025 4.024-4.025c2.22 0 4.025 1.807 4.025 4.025 0 2.218-1.805 4.026-4.025 4.026zm-.364-3.333l-1.306-1.147-.66.751 2.029 1.782 2.966-3.12-.725-.689-2.304 2.423zm-16.371-10.85l4.349-2.372 9.534 4.964-4.479 2.305-9.404-4.897zm9.4-5.127l9.404 5.186-3.832 1.972-9.565-4.98 3.993-2.178z"/>
                                         </svg>
                                     </div>
-                                    <h4 class="alt-features-title">Eficiência Total</h4>
+                                    <h4 class="alt-features-title">{{ __('Total Efficiency')}}</h4>
                                     <div class="alt-features-descr">
-                                        Otimize as finanças, liberte tempo para o que realmente importa.
+                                        {{ __('Optimize finances, free up time for what really matters.')}}
                                     </div>
                                 </div>
                             </div>
@@ -526,9 +523,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                             <path d="M12 0c-3.371 2.866-5.484 3-9 3v11.535c0 4.603 3.203 5.804 9 9.465 5.797-3.661 9-4.862 9-9.465v-11.535c-3.516 0-5.629-.134-9-3zm0 1.292c2.942 2.31 5.12 2.655 8 2.701v10.542c0 3.891-2.638 4.943-8 8.284-5.375-3.35-8-4.414-8-8.284v-10.542c2.88-.046 5.058-.391 8-2.701zm5 7.739l-5.992 6.623-3.672-3.931.701-.683 3.008 3.184 5.227-5.878.728.685z"/>
                                         </svg>
                                     </div>
-                                    <h4 class="alt-features-title">Transparência Absoluta</h4>
+                                    <h4 class="alt-features-title">{{ __('Absolute Transparency')}}</h4>
                                     <div class="alt-features-descr">
-                                        Tenha controle total com relatórios detalhados e análises em tempo real.
+                                        {{ __('Have total control with detailed reports and real-time analysis.')}}
                                     </div>
                                 </div>
                             </div>
@@ -542,9 +539,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                             <path d="M6.514 24.015h-3v-3.39c-2.08-.638-3.5-2.652-3.5-5.04 0-1.19.202-1.693 1.774-5.603.521-1.294 1.195-2.97 2.068-5.179.204-.518.67-.806 1.17-.802.482.004.941.284 1.146.802.718 1.817 1.302 3.274 1.777 4.454.26-.596.567-1.288.928-2.103.694-1.565 1.591-3.592 2.754-6.265.258-.592.881-.906 1.397-.888.572.015 1.126.329 1.369.888 1.163 2.673 2.06 4.7 2.754 6.265 2.094 4.727 2.363 5.334 2.363 6.764 0 2.927-2.078 5.422-5 6.082v4.015h-3v-4.015c-.943-.213-1.797-.617-2.523-1.165-.612.845-1.466 1.48-2.477 1.79v3.39zm14.493-6c1.652 0 2.993 1.341 2.993 2.993s-1.341 2.993-2.993 2.993-2.993-1.341-2.993-2.993 1.341-2.993 2.993-2.993zm.007.993c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm-7.5 3.993v-3.839c4.906-.786 5-4.751 5-5.244 0-1.218-.216-1.705-2.277-6.359-2.134-4.82-2.721-6.198-2.755-6.261-.079-.145-.193-.292-.455-.297-.238 0-.37.092-.481.297-.034.063-.621 1.441-2.755 6.261-2.061 4.654-2.277 5.141-2.277 6.359 0 .493.094 4.458 5 5.244v3.839h1zm-6.123-12.448l-.08-.198c-1.589-3.957-2.04-5.116-2.067-5.171-.072-.151-.15-.226-.226-.228-.109 0-.188.13-.235.228-.028.05-.316.818-2.066 5.171-1.542 3.833-1.703 4.233-1.703 5.23 0 1.988 1.076 3.728 3.5 4.25v3.166h1v-3.166c1.266-.273 2.159-.876 2.725-1.666-1.078-1.12-1.725-2.619-1.725-4.251 0-.979.126-1.572.877-3.365z"/>
                                         </svg>
                                     </div>
-                                    <h4 class="alt-features-title">Suporte Excepcional</h4>
+                                    <h4 class="alt-features-title">{{ __('Exceptional Support')}}</h4>
                                     <div class="alt-features-descr">
-                                        Nossa equipa está sempre pronta para ajudar e oferecer orientação especializada.
+                                        {{ __('Our team is always ready to help and offer expert guidance.')}}
                                     </div>
                                 </div>
                             </div>
@@ -558,9 +555,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                             <path d="M4.57 18.55l2.43.335-1.769 1.7.432 2.415-2.163-1.157-2.163 1.157.432-2.415-1.769-1.7 2.43-.335 1.07-2.207 1.07 2.207zm8.5 0l2.43.335-1.769 1.7.432 2.415-2.163-1.157-2.163 1.157.432-2.415-1.769-1.7 2.43-.335 1.07-2.207 1.07 2.207zm8.5 0l2.43.335-1.769 1.7.432 2.415-2.163-1.157-2.163 1.157.432-2.415-1.769-1.7 2.43-.335 1.07-2.207 1.07 2.207zm-18.473.918l-.917.126.667.641-.163.91.816-.436.816.436-.163-.91.667-.641-.917-.126-.403-.832-.403.832zm8.5 0l-.917.126.667.641-.163.91.816-.436.816.436-.163-.91.667-.641-.917-.126-.403-.832-.403.832zm8.5 0l-.917.126.667.641-.163.91.816-.436.816.436-.163-.91.667-.641-.917-.126-.403-.832-.403.832zm3.903-4.468h-24v-2.059c0-.99.079-1.562 1.249-1.833 1.352-.311 2.61-.585 1.999-1.734-1.852-3.502-.49-5.374 1.468-5.374 1.994 0 3.324 1.943 1.466 5.374-.318.585-.14.944.284 1.195.237-.226.591-.398 1.122-.521 1.683-.389 3.344-.736 2.545-2.209-2.366-4.364-.674-6.839 1.866-6.839 2.491 0 4.226 2.383 1.866 6.839-.775 1.464.826 1.812 2.545 2.209.532.123.887.295 1.123.522.425-.252.604-.61.285-1.196-1.858-3.431-.528-5.374 1.466-5.374 1.958 0 3.32 1.872 1.468 5.374-.61 1.149.647 1.423 1.999 1.734 1.17.271 1.249.843 1.249 1.833v2.059zm-6-1h5v-1.059c0-.783.021-.744-.475-.858-2.277-.536-2.551-.979-2.785-1.49-.162-.355-.27-.936.129-1.688.765-1.447.968-2.67.555-3.354-.393-.652-1.789-.83-2.289.012-.408.685-.197 1.931.562 3.334.407.749.301 1.332.141 1.688-.129.286-.282.581-.886.884.04.266.048.57.048.912v1.619zm-11.953-2.531c-.602-.304-.756-.598-.885-.884-.16-.356-.266-.939.141-1.688.76-1.403.971-2.649.562-3.334-.5-.842-1.896-.664-2.289-.012-.413.684-.21 1.907.555 3.354.399.752.291 1.333.129 1.688-.233.511-.508.954-2.785 1.49-.495.114-.475.075-.475.858v1.059h5v-1.623c0-.341.007-.643.047-.908zm10.953 2.531v-1.619c0-1.127-.03-1.178-.814-1.359-2.751-.634-3.093-1.162-3.359-1.744-.181-.395-.301-1.048.154-1.907 1.022-1.929 1.278-3.582.703-4.538-.437-.725-1.244-.833-1.685-.833-.446 0-1.259.11-1.699.85-.577.969-.318 2.613.712 4.512.465.857.348 1.51.169 1.909-.289.641-.679 1.114-3.368 1.751-.783.181-.813.232-.813 1.355v1.623h10z"/>
                                         </svg>
                                     </div>
-                                    <h4 class="alt-features-title">Resultados Comprovados</h4>
+                                    <h4 class="alt-features-title">{{ __('Comproved Results')}}</h4>
                                     <div class="alt-features-descr">
-                                        Confie em uma solução confiável com uma base sólida de clientes satisfeitos.
+                                        {{ _('Trust in a reliable solution with a solid base of satisfied customers.')}}
                                     </div>
                                 </div>
                             </div>
@@ -590,15 +587,15 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     <div class="row">
                                         
                                         <div class="col-md-7 col-lg-8 text-center text-md-start mb-sm-20">
-                                            <h2 class="section-title-small mb-20">Preparado para simplificar?</h2>
+                                            <h2 class="section-title-small mb-20">{{ __('Ready to simplify?')}}</h2>
                                             <p class="text-gray mb-0">
-                                                O MedSpence é a solução de gestão financeira que você precisa.
+                                                {{ __('The MedSpence is the financial management solution you need.')}}
                                             </p>
                                         </div>
                                         
                                         <div class="col-md-5 col-lg-4 text-center text-md-end pt-2">
                                             <a href="#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim">
-                                                <span>Contact Us</span>
+                                                <span>{{ __('Contact Us')}}</span>
                                             </a>
                                         </div>
                                         
@@ -633,11 +630,11 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             
                             <div class="col-lg-8 offset-lg-2 text-center mb-md-30">
                                                               
-                                <h2 class="section-caption-slick mb-30 mb-sm-20">Our Team</h2> 
+                                <h2 class="section-caption-slick mb-30 mb-sm-20">{{ __('Our Team')}}</h2> 
                                                                
-                                <h3 class="section-title mb-30">We believe in making the best work, and being the best to work with.</h3>
+                                <h3 class="section-title mb-30"></h3>
                             
-                                <p class="section-descr mb-0">Meet the Dedicated Minds Behind MedSpence's Success.</p>
+                                <p class="section-descr mb-0">{{ __('We believe in making the best work, and being the best to work with.')}}</p>
                             
                             </div>                          
                             
@@ -656,10 +653,10 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     
                                     <div class="post-prev-3-intro">
                                         
-                                        <h4 class="post-prev-3-title">Inovação Imparável</h4>
+                                        <h4 class="post-prev-3-title">{{ __('Unstoppable Innovation')}}</h4>
                                         
                                         <div class="post-prev-3-text">
-                                            Com criatividade e dedicação, Sérgio Serra eleva continuamente os padrões de excelência no desenvolvimento de soluções inovadoras.
+                                            {{ __('With creativity and dedication, Sérgio Serra continuously raises the standards of excellence in the development of innovative solutions.')}}
                                         </div>
                                         
                                         <div class="post-prev-3-info clearfix">
@@ -684,17 +681,16 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     
                                     <div class="post-prev-3-intro">
                                         
-                                        <h4 class="post-prev-3-title">Excelência em Ação</h4>
+                                        <h4 class="post-prev-3-title">{{ __('Excellence in Action')}}</h4>
                                         
                                         <div class="post-prev-3-text">
-                                            Com paixão e dedicação, André Vale redefine constantemente os limites da excelência no desenvolvimento software com soluções inovadoras.
+                                            {{ __('With passion and dedication, André Vale constantly redefines the limits of excellence in software development with innovative solutions.')}}
                                         </div>
                                         
                                         <div class="post-prev-3-info clearfix">
                                             <div class="float-start">
                                                 <a href="#"><img class="post-prev-3-author-img" width="30" height="30" src="images/team/andre-88.jpg" alt="Image Description" /></a> <a href="#">André Vale</a>
                                             </div>
-                                            <div class="float-end"><a href="#">August 3</a></div>
                                         </div>
                                         
                                     </div>
@@ -733,21 +729,21 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         <div class="row">
                             <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3 wow fadeInUp">
                                 
-                                <h2 class="section-title-small text-center mb-40">Stay informed with our newsletter.</h2>
+                                <h2 class="section-title-small text-center mb-40">{{ __('Stay informed with our newsletter.')}}</h2>
                                 
                                 <form id="mailchimp" class="form">
                                 
                                     <div class="d-sm-flex justify-content-between mb-3">
-                                        <label for="newsletter-email" class="visually-hidden">Your email</label>
+                                        <label for="newsletter-email" class="visually-hidden">{{ __('Your Email')}}</label>
                                         <input placeholder="Enter your email" class="newsletter-field input-lg input-circle" id="newsletter-email" name="newsletter-email" type="email" pattern=".{5,100}" required aria-required="true">
                                         <button type="submit" aria-controls="subscribe-result" class="newsletter-button btn btn-mod btn-color btn-large btn-circle btn-hover-anim">
-                                            <span>Subscribe Now</span>
+                                            <span>{{ __('Subscribe Now')}}</span>
                                         </button>
                                     </div>
                                     
                                     <div class="form-tip">
                                         <i class="icon-info size-16"></i>
-                                        By sending the form you agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                                        {{ __('By sending the form you agree to the')}} <a href="#">{{ __('Terms & Conditions')}}</a> {{ __('and')}} <a href="#"> {{ __('Privacy Policy')}}</a>.
                                     </div>
                                     
                                     <div id="subscribe-result" role="region" aria-live="polite" aria-atomic="true"></div>
@@ -772,9 +768,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             <!-- Left Column -->
                             <div class="col-lg-4 mb-md-50 mb-sm-30 position-relative z-index-1"> 
                                                            
-                                <h2 class="section-caption-slick mb-30 mb-sm-20">Contact Us</h2>
+                                <h2 class="section-caption-slick mb-30 mb-sm-20">{{ __('Contact Us')}}</h2>
                                 
-                                <h3 class="section-title mb-50 mb-sm-30">We’re open to talk to good people.</h3>
+                                <h3 class="section-title mb-50 mb-sm-30">{{ __('We’re open to talk to good people.')}}</h3>
                                 
                                 <!-- Contact Information -->
                                 <div class="row">
@@ -786,13 +782,13 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 <i class="mi-location"></i>
                                             </div>
                                             <h4 class="ci-title visually-hidden">
-                                                Our Address
+                                                {{ __('Our Address')}}
                                             </h4>
                                             <div class="ci-text">
                                                 Av. do Atlântico 644 4900, Viana do Castelo
                                             </div>
                                             <div>
-                                                <a href="https://maps.app.goo.gl/tgH5W4EkYxWhbKam8" class="link-hover-anim" data-link-animate="y" rel="nofollow noopener" target="_blank">See Map <i class="mi-arrow-right size-18"></i></a>
+                                                <a href="https://maps.app.goo.gl/tgH5W4EkYxWhbKam8" class="link-hover-anim" data-link-animate="y" rel="nofollow noopener" target="_blank">{{ __('See Map')}} <i class="mi-arrow-right size-18"></i></a>
                                             </div>
                                         </div>
                                         <!-- End Address -->
@@ -803,13 +799,13 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 <i class="mi-email"></i>
                                             </div>
                                             <h4 class="ci-title visually-hidden">
-                                                Our Email
+                                                {{ __('Our Email')}}
                                             </h4>
                                             <div class="ci-text">
                                                 medspence@lusohost.pt
                                             </div>
                                             <div>
-                                                <a href="mailto:medspence@lusohost.pt" class="link-hover-anim" data-link-animate="y">Say Hello <i class="mi-arrow-right size-18"></i></a>
+                                                <a href="mailto:medspence@lusohost.pt" class="link-hover-anim" data-link-animate="y">{{ __('Say Hello')}} <i class="mi-arrow-right size-18"></i></a>
                                             </div>
                                         </div>                                    
                                         <!-- End Email -->
@@ -820,16 +816,16 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 <i class="mi-mobile"></i>
                                             </div>
                                             <h4 class="ci-title visually-hidden">
-                                                Call Us
+                                                {{ __('Contact Us')}}
                                             </h4>
                                             <div class="ci-text">
                                                 +351 258 819 700
                                                 <div class="small">
-                                                    (Monday-Friday: 8am to 18pm)
+                                                    ({{ __('Monday-Friday')}}: 8am to 18pm)
                                                 </div>
                                             </div>
                                             <div>
-                                                <a href="tel:+351258819700" class="link-hover-anim" data-link-animate="y">Call now <i class="mi-arrow-right size-18"></i></a>
+                                                <a href="tel:+351258819700" class="link-hover-anim" data-link-animate="y">{{ __('Call now')}}<i class="mi-arrow-right size-18"></i></a>
                                             </div>
                                         </div>
                                         <!-- End Phone -->
@@ -857,41 +853,41 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     <div class="col-md-7">
                                         <div class="box-shadow bg-white round p-4 p-sm-5 position-relative z-index-1">
                                     
-                                            <h4 class="h3 mb-40 mb-sm-30">Get in Touch</h4>
+                                            <h4 class="h3 mb-40 mb-sm-30">{{ __('Get in touch')}}</h4>
                                             
                                             <!-- Contact Form -->
                                             <form class="form contact-form" id="contact_form">
                                                 
                                                 <!-- Name -->
                                                 <div class="form-group">
-                                                    <label for="name" class="visually-hidden">Name</label>
-                                                    <input type="text" name="name" id="name" class="input-lg input-circle form-control" placeholder="Name" pattern=".{3,100}" required aria-required="true">
+                                                    <label for="name" class="visually-hidden">{{ __('Name')}}</label>
+                                                    <input type="text" name="name" id="name" class="input-lg input-circle form-control" placeholder="{{ __('Name')}}" pattern=".{3,100}" required aria-required="true">
                                                 </div>
                                                 <!-- End Name -->
                                                         
                                                 <!-- Email -->
                                                 <div class="form-group">
-                                                    <label for="email" class="visually-hidden">Email</label>
-                                                    <input type="email" name="email" id="email" class="input-lg input-circle form-control" placeholder="Email" pattern=".{5,100}" required aria-required="true">
+                                                    <label for="email" class="visually-hidden">{{ __('Email')}}</label>
+                                                    <input type="email" name="email" id="email" class="input-lg input-circle form-control" placeholder="{{ __('Email')}}" pattern=".{5,100}" required aria-required="true">
                                                 </div>
                                                 <!-- End Email -->
                                                 
                                                 <!-- Message -->
                                                 <div class="form-group">
-                                                    <label for="message" class="visually-hidden">Message</label>
-                                                    <textarea name="message" id="message" class="input-lg input-circle form-control" style="height: 130px;" placeholder="Message"></textarea>
+                                                    <label for="message" class="visually-hidden">{{ __('Message')}}</label>
+                                                    <textarea name="message" id="message" class="input-lg input-circle form-control" style="height: 130px;" placeholder="{{ __('Message')}}"></textarea>
                                                 </div>
                                                 
                                                 <!-- Send Button -->
                                                 <button class="submit_btn btn btn-mod btn-color btn-large btn-full btn-circle btn-hover-anim" id="submit_btn" aria-controls="result">
-                                                    <span>Send Message</span>
+                                                    <span>{{ __('Send Message')}}</span>
                                                 </button>
                                                 <!-- End Send Button -->
                                                 
                                                 <!-- Inform Tip -->
                                                 <div class="form-tip w-100 pt-30 mt-sm-20">
                                                     <i class="icon-info size-16"></i>
-                                                    All the fields are required. By sending the form you agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                                                    {{ __('All the fields are required. By sending the form you agree to the')}} <a href="#">{{ __('Terms & Conditions')}}</a> {{ __('and')}} <a href="#">{{ __('Privacy Policy')}}</a>.
                                                 </div>
                                                 <!-- End Inform Tip -->
                                                
@@ -936,7 +932,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             </div>
                             
                             <p>
-                                A transformar a saúde através da excelência financeira - MedSpence, sua parceira no caminho para o sucesso.
+                                {{ __('To transform healthcare through financial excellence - MedSpence, your partner on the path to success.')}}
                             </p>
                             
                             <div class="clearlinks">                                
@@ -955,13 +951,13 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 <!-- Footer Widget -->
                                 <div class="col-sm-4 mt-30">
                                     
-                                    <h3 class="fw-title">Company</h3>
+                                    <h3 class="fw-title">{{ __('Company')}}</h3>
                                     
                                     <ul class="fw-menu clearlist local-scroll">                                        
-                                        <li><a href="#about">About</a></li>
-                                        <li><a href="#services">Services</a></li>
-                                        <li><a href="#team">Team</a></li>
-                                        <li><a href="#contact">Contact</a></li>
+                                        <li><a href="#about">{{ __('About Us')}}</a></li>
+                                        <li><a href="#services">{{ __('Service')}}</a></li>
+                                        <li><a href="#team">{{ __('Team')}}</a></li>
+                                        <li><a href="#contact">{{ __('Contact Us')}}</a></li>
                                     </ul>
                                     
                                 </div>
@@ -970,7 +966,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 <!-- Footer Widget -->
                                 <div class="col-sm-4 mt-30">
                                     
-                                    <h3 class="fw-title">Social Media</h3>
+                                    <h3 class="fw-title">{{ __('Social Media')}}</h3>
                                     
                                     <ul class="fw-menu clearlist">
                                         <li>
@@ -1005,11 +1001,11 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 <!-- Footer Widget -->
                                 <div class="col-sm-4 mt-30">
                                     
-                                    <h3 class="fw-title">Legal</h3>
+                                    <h3 class="fw-title">{{ __('Legal')}}</h3>
                                     
                                     <ul class="fw-menu clearlist">                                     
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="#">{{ __('Privacy Policy')}}</a></li>
+                                        <li><a href="#">{{ __('Terms & Conditions')}}</a></li>
                                     </ul>
                                     
                                 </div>
@@ -1035,7 +1031,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             <div class="local-scroll float-end mt-n20 mt-sm-10">
                                 <a href="#top" class="link-to-top color-light">                                
                                     <i class="mi-arrow-up size-24"></i>
-                                    <span class="visually-hidden">Scroll to top</span>
+                                    <span class="visually-hidden">{{ __('Scroll to top')}}</span>
                                 </a>
                             </div>
                             <!-- End Back to Top Link -->
