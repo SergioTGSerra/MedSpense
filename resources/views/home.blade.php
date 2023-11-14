@@ -9,19 +9,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
         <!-- Favicon -->
-        <link rel="icon" href="images/favicon.png" type="image/png" sizes="any">
-        <link rel="icon" href="images/favicon.svg" type="image/svg+xml">         
+        <link rel="icon" href="landing/images/favicon.png" type="image/png" sizes="any">
+        <link rel="icon" href="landing/images/favicon.svg" type="image/svg+xml">         
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style-responsive.css">
-        <link rel="stylesheet" href="css/vertical-rhythm.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/splitting.css">
-        <link rel="stylesheet" href="css/YTPlayer.css">
-        <link rel="stylesheet" href="css/demo-slick/demo-slick.css">
+        <link rel="stylesheet" href="landing/css/bootstrap.min.css">
+        <link rel="stylesheet" href="landing/css/style.css">
+        <link rel="stylesheet" href="landing/css/style-responsive.css">
+        <link rel="stylesheet" href="landing/css/vertical-rhythm.min.css">
+        <link rel="stylesheet" href="landing/css/magnific-popup.css">
+        <link rel="stylesheet" href="landing/css/owl.carousel.css">
+        <link rel="stylesheet" href="landing/css/splitting.css">
+        <link rel="stylesheet" href="landing/css/YTPlayer.css">
+        <link rel="stylesheet" href="landing/css/home.css">
         
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +53,7 @@
                     image size for support of retina screens. See details in the template documentation. *) -->
                     <div class="nav-logo-wrap position-static local-scroll">
                         <a href="#top" class="logo">
-                            <img src="images/logo-dark.svg" alt="Your Company Logo"/>
+                            <img src="/landing/images/logo-dark.svg" alt="Company Logo"/>
                         </a>
                     </div>
                     
@@ -109,7 +109,7 @@
                     
                     <!-- Background Shape -->
                     <div class="bg-shape-2 wow fadeIn">
-                        <img src="images/demo-slick/bg-shape-2.svg" alt="" />
+                        <img src="landing/images/bg-shape-2.svg" alt="" />
                     </div>
                     <!-- End Background Shape -->
                     
@@ -157,18 +157,18 @@
                                         <div class="composition-4">
                                             
                                             <div class="composition-4-decoration opacity-065">
-                                                <img src="images/demo-slick/decoration-1.svg" alt="" />
+                                                <img src="landing/images/decoration-1.svg" alt="" />
                                             </div>
                                             
                                             <div class="composition-4-image-1">
                                                 <div class="composition-4-image-1-inner">
-                                                    <img src="images/demo-slick/hs-image-1.jpg" alt="Image Description" />
+                                                    <img src="landing/images/hs-image-1.jpg" alt="Image Description" />
                                                 </div>
                                             </div>
                                             
                                             <div class="composition-4-image-2">
                                                 <div class="composition-4-image-2-inner">
-                                                    <img src="images/demo-slick/hs-image-2.jpg" alt="Image Description" />
+                                                    <img src="landing/images/hs-image-2.jpg" alt="Image Description" />
                                                 </div>
                                             </div>
                                             
@@ -297,18 +297,18 @@
                                     <div class="composition-5">
                                             
                                         <div class="composition-5-decoration opacity-065">
-                                            <img src="images/demo-slick/decoration-1.svg" alt="" />
+                                            <img src="landing/images/decoration-1.svg" alt="" />
                                         </div>
                                         
                                         <div class="composition-5-image-1">
                                             <div class="composition-5-image-1-inner">
-                                                <img src="images/demo-slick/hs-image-3.jpg" alt="Image Description" class="wow scaleOutIn" data-wow-offset="200" />
+                                                <img src="landing/images/hs-image-3.jpg" alt="Image Description" class="wow scaleOutIn" data-wow-offset="200" />
                                             </div>
                                         </div>
                                         
                                         <div class="composition-5-image-2">
                                             <div class="composition-5-image-2-inner">
-                                                <img src="images/demo-slick/hs-image-4.jpg" alt="Image Description" class="wow scaleOutIn" data-wow-offset="0" />
+                                                <img src="landing/images/hs-image-4.jpg" alt="Image Description" class="wow scaleOutIn" data-wow-offset="0" />
                                             </div>
                                         </div>
                                         
@@ -325,7 +325,7 @@
                 
                 
                 <!-- Numbers Section -->
-                <section class="page-section bg-light-alpha-90 bg-scroll" style="background-image: url(images/demo-slick/section-bg-1.jpg)">
+                <section class="page-section bg-light-alpha-90 bg-scroll" style="background-image: url(landing/images/section-bg-1.jpg)">
                     <div class="container position-relative">
                         
                         <!-- Numbers Grid -->
@@ -620,7 +620,7 @@
                     
                     <!-- Background Shape -->
                     <div class="bg-shape-3">
-                        <img src="images/demo-slick/bg-shape-3.svg" alt="" />
+                        <img src="landing/images/bg-shape-3.svg" alt="" />
                     </div>
                     <!-- End Background Shape -->
                     
@@ -648,7 +648,7 @@
                                 <div class="post-prev-3-container d-block d-sm-flex">
                                 
                                     <div class="post-prev-3-img">
-                                        <img src="images/team/serra.jpg" alt="Add Image Description" class="wow scaleOutIn" />
+                                        <img src="landing/images/team/serra.jpg" alt="Add Image Description" class="wow scaleOutIn" />
                                     </div>
                                     
                                     <div class="post-prev-3-intro">
@@ -661,7 +661,7 @@
                                         
                                         <div class="post-prev-3-info clearfix">
                                             <div class="float-start">
-                                                <a href="#"><img class="post-prev-3-author-img" width="30" height="30" src="images/team/serra-88.jpg" alt="Image Description" /></a> <a href="#">Sérgio Serra</a>
+                                                <a href="#"><img class="post-prev-3-author-img" width="30" height="30" src="landing/images/team/serra-88.jpg" alt="Image Description" /></a> <a href="#">Sérgio Serra</a>
                                             </div>
                                         </div>
                                         
@@ -676,7 +676,7 @@
                                 <div class="post-prev-3-container d-block d-sm-flex">
                                 
                                     <div class="post-prev-3-img">
-                                        <img src="images/team/andre.jpg" alt="Add Image Description" class="wow scaleOutIn" />
+                                        <img src="landing/images/team/andre.jpg" alt="Add Image Description" class="wow scaleOutIn" />
                                     </div>
                                     
                                     <div class="post-prev-3-intro">
@@ -689,7 +689,7 @@
                                         
                                         <div class="post-prev-3-info clearfix">
                                             <div class="float-start">
-                                                <a href="#"><img class="post-prev-3-author-img" width="30" height="30" src="images/team/andre-88.jpg" alt="Image Description" /></a> <a href="#">André Vale</a>
+                                                <a href="#"><img class="post-prev-3-author-img" width="30" height="30" src="landing/images/team/andre-88.jpg" alt="Image Description" /></a> <a href="#">André Vale</a>
                                             </div>
                                         </div>
                                         
@@ -717,10 +717,10 @@
                     
                     <!-- Decoration Dots -->
                     <div class="decoration-16 opacity-035 d-none d-md-block">
-                        <img src="images/demo-slick/decoration-2.svg" alt="Image Description" />
+                        <img src="landing/images/decoration-2.svg" alt="Image Description" />
                     </div>
                     <div class="decoration-17 opacity-035 d-none d-md-block">
-                        <img src="images/demo-slick/decoration-2.svg" alt="Image Description" />
+                        <img src="landing/images/decoration-2.svg" alt="Image Description" />
                     </div>
                     <!-- End Decoration Dots -->
                     
@@ -917,7 +917,7 @@
                 
                 <!-- Background Shape -->
                 <div class="bg-shape-4">
-                    <img src="images/demo-slick/bg-shape-4.svg" alt="" />
+                    <img src="landing/images/bg-shape-4.svg" alt="" />
                 </div>
                 <!-- End Background Shape -->
                 
@@ -928,7 +928,7 @@
                         <div class="col-md-4 col-lg-3 text-gray mb-sm-50">
                             
                             <div class="mb-30">
-                                <img src="images/logo-dark.svg" alt="MedSpence Logo" />
+                                <img src="/landing/images/logo-dark.svg" alt="MedSpence Logo" />
                             </div>
                             
                             <p>
@@ -1050,12 +1050,12 @@
         <!-- End Page Wrap -->      
         
         <!-- JS -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>             
-        <script src="js/contact-form.js"></script>        
-        <script src="js/all.js"></script> 
+        <script src="/landing/js/jquery.min.js"></script>
+        <script src="/landing/js/bootstrap.bundle.min.js"></script>
+        <script src="/landing/js/plugins.js"></script>
+        <script src="/landing/js/jquery.ajaxchimp.min.js"></script>             
+        <script src="/landing/js/contact-form.js"></script>        
+        <script src="/landing/js/all.js"></script> 
         <!-- End JS -->       
         
     </body>
