@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\App;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +12,15 @@ use Illuminate\Support\Facades\App;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/login', function () {
+    return view('app.sign-in');
+});
+
+Route::get('/dashboard', function () {
+    return view('app.index');
+});
+
 
 Route::prefix('{location?}')->middleware('location')->group(function () {
     Route::get('/', function () {
