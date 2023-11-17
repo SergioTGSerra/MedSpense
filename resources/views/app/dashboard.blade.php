@@ -55,16 +55,15 @@ License: For each use you must have a valid license purchased only from above li
     <!--end::Head-->
     <!--begin::Body-->
     <body  id="kt_app_body" data-kt-app-header-fixed="true" data-kt-app-header-fixed-mobile="true" data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true"  class="app-default" >
-    @include('app.partials.theme-mode._init')
-    @include('app.layout._default')
-    @include('app.partials._scrolltop')
+        @include('app.partials.theme-mode._init')
+        @include('app.layout._default')
+        @include('app.partials._scrolltop')
 
-                    <!--begin::Modals-->
-    @include('app.partials.modals._upgrade-plan')
-    @include('app.partials.modals.users-search._main')
-    @include('app.partials.modals._invite-friends')
-
-            <!--end::Modals-->
+        <!--begin::Modals-->
+        @include('app.partials.modals._upgrade-plan')
+        @include('app.partials.modals.users-search._main')
+        @include('app.partials.modals._invite-friends')
+        <!--end::Modals-->
         <!--begin::Javascript-->
         <script>
             var hostUrl = "assets/";        </script>

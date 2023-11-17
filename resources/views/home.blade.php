@@ -3,9 +3,8 @@
     <head>
         
         <title>MedSpense &mdash; {{ __('Take Care of You With MedSpense') }}</title>
-        <meta name="description" content="Resonance &mdash; One & Multi Page Creative Template">  
+        <meta name="description" content="MedSpence &mdash; Take Care of You With MedSpense">  
         <meta charset="utf-8">
-        <meta name="author" content="https://themeforest.net/user/bestlooker/portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
         <!-- Favicon -->
@@ -47,10 +46,8 @@
             <!-- Navigation Panel -->
             <nav class="main-nav transparent stick-fixed wow-menubar wch-unset">
                 <div class="main-nav-sub full-wrapper">
-                    
-                    <!-- Logo  (* Add your text or image to the link tag. Use SVG or PNG image format. 
-                    If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
-                    image size for support of retina screens. See details in the template documentation. *) -->
+
+                    <!-- Logo -->
                     <div class="nav-logo-wrap position-static local-scroll">
                         <a href="#top" class="logo">
                             <img src="/landing/images/logo-dark.svg" alt="Company Logo"/>
@@ -89,8 +86,8 @@
                             <!-- End Languages -->  
                                                       
                             <li>
-                                <a href="#contact" class="opacity-1 no-hover">
-                                    <span class="btn btn-mod btn-color-light btn-small btn-circle" data-btn-animate="y">{{ __('Get in touch') }}</span>
+                                <a href="/dashboard" class="opacity-1 no-hover">
+                                    <span class="btn btn-mod btn-color-light btn-small btn-circle" data-btn-animate="y">{{ __('App') }}</span>
                                 </a>
                             </li>
                         </ul>                      
@@ -970,25 +967,19 @@
                                     
                                     <ul class="fw-menu clearlist">
                                         <li>
-                                            <a href="#" rel="noopener nofollow" target="_blank">
+                                            <a href="https://www.facebook.com/ipvc.oficial/" rel="noopener nofollow" target="_blank">
                                                 <i class="fa-facebook"></i>
                                                 Facebook
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" rel="noopener nofollow" target="_blank">
+                                            <a href="https://www.youtube.com/user/ipvctv" rel="noopener nofollow" target="_blank">
                                                 <i class="fa-youtube"></i>
                                                 Youtube
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" rel="noopener nofollow" target="_blank">
-                                                <i class="fa-pinterest"></i>
-                                                Pinterest
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" rel="noopener nofollow" target="_blank">
+                                            <a href="https://www.linkedin.com/school/instituto-polit-cnico-de-viana-do-castelo/" rel="noopener nofollow" target="_blank">
                                                 <i class="fa-linkedin"></i>
                                                 LinkedIn
                                             </a>

@@ -230,13 +230,6 @@ License: For each use you must have a valid license purchased only from above li
 						<!--begin::Title-->
 						<h1 class="d-none d-lg-block text-white fs-2qx fw-bolder text-center mb-7">Fast, Efficient and Productive</h1>
 						<!--end::Title-->
-						<!--begin::Text-->
-						<div class="d-none d-lg-block text-white fs-base text-center">In this kind of post, 
-						<a href="#" class="opacity-75-hover text-warning fw-bold me-1">the blogger</a>introduces a person they’ve interviewed 
-						<br />and provides some background information about 
-						<a href="#" class="opacity-75-hover text-warning fw-bold me-1">the interviewee</a>and their 
-						<br />work following this is a transcript of the interview.</div>
-						<!--end::Text-->
 					</div>
 					<!--end::Content-->
 				</div>
