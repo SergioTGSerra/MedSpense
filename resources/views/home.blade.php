@@ -280,7 +280,7 @@
                                             <span>{{ __('Request demo')}}</span>
                                         </a>
                                         
-                                        <a href="#services" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">{{ __('Contact Us')}}<i class="mi-arrow-right size-24"></i></a>
+                                        <a href="#services" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">{{ __('Services')}}<i class="mi-arrow-right size-24"></i></a>
                                         
                                     </div>                         
                                     
