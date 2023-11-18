@@ -25,4 +25,3 @@
     <!--end::Page-->
 </div>
 <!--end::App-->
-@include('app.partials._drawers')
