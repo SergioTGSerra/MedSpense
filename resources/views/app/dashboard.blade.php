@@ -1,4 +1,4 @@
-@extends('app.index')
+@extends('app.layout.index')
 
 @section('title', 'Profile')
 
