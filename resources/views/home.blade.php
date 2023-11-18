@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+
+        <base href="/landing/"/>
         
         <title>MedSpense &mdash; {{ __('Take Care of You With MedSpense') }}</title>
         <meta name="description" content="MedSpence &mdash; Take Care of You With MedSpense">  
@@ -8,19 +10,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
         <!-- Favicon -->
-        <link rel="icon" href="landing/images/favicon.png" type="image/png" sizes="any">
-        <link rel="icon" href="landing/images/favicon.svg" type="image/svg+xml">         
+        <link rel="icon" href="images/favicon.png" type="image/png" sizes="any">
+        <link rel="icon" href="images/favicon.svg" type="image/svg+xml">         
 
         <!-- CSS -->
-        <link rel="stylesheet" href="landing/css/bootstrap.min.css">
-        <link rel="stylesheet" href="landing/css/style.css">
-        <link rel="stylesheet" href="landing/css/style-responsive.css">
-        <link rel="stylesheet" href="landing/css/vertical-rhythm.min.css">
-        <link rel="stylesheet" href="landing/css/magnific-popup.css">
-        <link rel="stylesheet" href="landing/css/owl.carousel.css">
-        <link rel="stylesheet" href="landing/css/splitting.css">
-        <link rel="stylesheet" href="landing/css/YTPlayer.css">
-        <link rel="stylesheet" href="landing/css/home.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-responsive.css">
+        <link rel="stylesheet" href="css/vertical-rhythm.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/splitting.css">
+        <link rel="stylesheet" href="css/YTPlayer.css">
+        <link rel="stylesheet" href="css/home.css">
         
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +39,7 @@
         <!-- End Page Loader -->
         
         <!-- Skip to Content -->
-        <a href="#main" class="btn skip-to-content">Skip to Content</a>
+        <a href="/#main" class="btn skip-to-content">Skip to Content</a>
         <!-- End Skip to Content -->
         
         <!-- Page Wrap -->
@@ -49,8 +51,8 @@
 
                     <!-- Logo -->
                     <div class="nav-logo-wrap position-static local-scroll">
-                        <a href="#top" class="logo">
-                            <img src="/landing/images/logo-dark.svg" alt="Company Logo"/>
+                        <a href="/#top" class="logo">
+                            <img src="images/logo-dark.svg" alt="Company Logo"/>
                         </a>
                     </div>
                     
@@ -63,11 +65,11 @@
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist scroll-nav local-scroll justify-content-end">                            
-                            <li><a href="#home" class="active">{{ __('Home') }}</a></li>
-                            <li><a href="#about">{{ __('About Us') }}</a></li>
-                            <li><a href="#services">{{ __('Services') }}</a></li>
-                            <li><a href="#team">{{ __('Team') }}</a></li>
-                            <li><a href="#contact">{{ __('Contact Us') }}</a></li>
+                            <li><a href="/#home" class="active">{{ __('Home') }}</a></li>
+                            <li><a href="/#about">{{ __('About Us') }}</a></li>
+                            <li><a href="/#services">{{ __('Services') }}</a></li>
+                            <li><a href="/#team">{{ __('Team') }}</a></li>
+                            <li><a href="/#contact">{{ __('Contact Us') }}</a></li>
                             
                             <li class="desktop-nav-display">
                                 <div class="vr mt-2"></div>
@@ -75,7 +77,7 @@
                             
                             <!-- Languages -->
                             <li>
-                                <a href="#" class="mn-has-sub">{{ App::currentLocale() == 'pt' ? 'PT' : 'EN' }} <i class="mi-chevron-down"></i></a>
+                                <a href="/#" class="mn-has-sub">{{ App::currentLocale() == 'pt' ? 'PT' : 'EN' }} <i class="mi-chevron-down"></i></a>
                                 
                                 <ul class="mn-sub to-left">                                    
                                     <li><a href="{{ url('en') }}">English</a></li>
@@ -86,7 +88,7 @@
                             <!-- End Languages -->  
                                                       
                             <li>
-                                <a href="/dashboard" class="opacity-1 no-hover">
+                                <a href="/app/dashboard" class="opacity-1 no-hover">
                                     <span class="btn btn-mod btn-color-light btn-small btn-circle" data-btn-animate="y">{{ __('App') }}</span>
                                 </a>
                             </li>
@@ -106,7 +108,7 @@
                     
                     <!-- Background Shape -->
                     <div class="bg-shape-2 wow fadeIn">
-                        <img src="landing/images/bg-shape-2.svg" alt="" />
+                        <img src="images/bg-shape-2.svg" alt="" />
                     </div>
                     <!-- End Background Shape -->
                     
@@ -136,11 +138,11 @@
                                     
                                         <div class="local-scroll wow fadeInUp wch-unset" data-wow-delay="0.3s" data-wow-offset="0">
                                             
-                                            <a href="#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10">
+                                            <a href="/#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10">
                                                 <span>{{ __('Request demo') }}</span>
                                             </a>
                                             
-                                            <a href="#about" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">{{ __('Contact Us') }}<i class="mi-arrow-right size-24"></i></a>
+                                            <a href="/#about" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">{{ __('Contact Us') }}<i class="mi-arrow-right size-24"></i></a>
                                             
                                         </div>
                                         
@@ -154,18 +156,18 @@
                                         <div class="composition-4">
                                             
                                             <div class="composition-4-decoration opacity-065">
-                                                <img src="landing/images/decoration-1.svg" alt="" />
+                                                <img src="images/decoration-1.svg" alt="" />
                                             </div>
                                             
                                             <div class="composition-4-image-1">
                                                 <div class="composition-4-image-1-inner">
-                                                    <img src="landing/images/hs-image-1.jpg" alt="Image Description" />
+                                                    <img src="images/hs-image-1.jpg" alt="Image Description" />
                                                 </div>
                                             </div>
                                             
                                             <div class="composition-4-image-2">
                                                 <div class="composition-4-image-2-inner">
-                                                    <img src="landing/images/hs-image-2.jpg" alt="Image Description" />
+                                                    <img src="images/hs-image-2.jpg" alt="Image Description" />
                                                 </div>
                                             </div>
                                             
@@ -181,7 +183,7 @@
                         <!-- Scroll Down -->
                         <div class="local-scroll scroll-down-wrap-type-1 wow fadeInUp" data-wow-offset="0">
                             <div class="container text-center text-lg-start">
-                                <a href="#about" class="scroll-down-1">
+                                <a href="/#about" class="scroll-down-1">
                                     <div class="scroll-down-1-icon">
                                         <i class="mi-arrow-down"></i>
                                     </div>
@@ -276,11 +278,11 @@
                                     
                                     <div class="local-scroll wch-unset">
                                             
-                                        <a href="#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10">
+                                        <a href="/#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10">
                                             <span>{{ __('Request demo')}}</span>
                                         </a>
                                         
-                                        <a href="#services" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">{{ __('Services')}}<i class="mi-arrow-right size-24"></i></a>
+                                        <a href="/#services" class="link-hover-anim ms-2 ms-sm-5 me-2" data-link-animate="y">{{ __('Services')}}<i class="mi-arrow-right size-24"></i></a>
                                         
                                     </div>                         
                                     
@@ -294,18 +296,18 @@
                                     <div class="composition-5">
                                             
                                         <div class="composition-5-decoration opacity-065">
-                                            <img src="landing/images/decoration-1.svg" alt="" />
+                                            <img src="images/decoration-1.svg" alt="" />
                                         </div>
                                         
                                         <div class="composition-5-image-1">
                                             <div class="composition-5-image-1-inner">
-                                                <img src="landing/images/hs-image-3.jpg" alt="Image Description" class="wow scaleOutIn" data-wow-offset="200" />
+                                                <img src="images/hs-image-3.jpg" alt="Image Description" class="wow scaleOutIn" data-wow-offset="200" />
                                             </div>
                                         </div>
                                         
                                         <div class="composition-5-image-2">
                                             <div class="composition-5-image-2-inner">
-                                                <img src="landing/images/hs-image-4.jpg" alt="Image Description" class="wow scaleOutIn" data-wow-offset="0" />
+                                                <img src="images/hs-image-4.jpg" alt="Image Description" class="wow scaleOutIn" data-wow-offset="0" />
                                             </div>
                                         </div>
                                         
@@ -322,7 +324,7 @@
                 
                 
                 <!-- Numbers Section -->
-                <section class="page-section bg-light-alpha-90 bg-scroll" style="background-image: url(landing/images/section-bg-1.jpg)">
+                <section class="page-section bg-light-alpha-90 bg-scroll" style="background-image: url(images/section-bg-1.jpg)">
                     <div class="container position-relative">
                         
                         <!-- Numbers Grid -->
@@ -411,7 +413,7 @@
                                 
                                 <div class="local-scroll">
                                         
-                                    <a href="#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10">
+                                    <a href="/#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10">
                                         <span>{{ __('Request demo')}}</span>
                                     </a>
                                     
@@ -591,7 +593,7 @@
                                         </div>
                                         
                                         <div class="col-md-5 col-lg-4 text-center text-md-end pt-2">
-                                            <a href="#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim">
+                                            <a href="/#contact" class="btn btn-mod btn-color btn-large btn-circle btn-hover-anim">
                                                 <span>{{ __('Contact Us')}}</span>
                                             </a>
                                         </div>
@@ -617,7 +619,7 @@
                     
                     <!-- Background Shape -->
                     <div class="bg-shape-3">
-                        <img src="landing/images/bg-shape-3.svg" alt="" />
+                        <img src="images/bg-shape-3.svg" alt="" />
                     </div>
                     <!-- End Background Shape -->
                     
@@ -645,7 +647,7 @@
                                 <div class="post-prev-3-container d-block d-sm-flex">
                                 
                                     <div class="post-prev-3-img">
-                                        <img src="landing/images/team/serra.jpg" alt="Add Image Description" class="wow scaleOutIn" />
+                                        <img src="images/team/serra.jpg" alt="Add Image Description" class="wow scaleOutIn" />
                                     </div>
                                     
                                     <div class="post-prev-3-intro">
@@ -658,7 +660,7 @@
                                         
                                         <div class="post-prev-3-info clearfix">
                                             <div class="float-start">
-                                                <a href="#"><img class="post-prev-3-author-img" width="30" height="30" src="landing/images/team/serra-88.jpg" alt="Image Description" /></a> <a href="#">Sérgio Serra</a>
+                                                <a href="/#"><img class="post-prev-3-author-img" width="30" height="30" src="images/team/serra-88.jpg" alt="Image Description" /></a> <a href="/#">Sérgio Serra</a>
                                             </div>
                                         </div>
                                         
@@ -673,7 +675,7 @@
                                 <div class="post-prev-3-container d-block d-sm-flex">
                                 
                                     <div class="post-prev-3-img">
-                                        <img src="landing/images/team/andre.jpg" alt="Add Image Description" class="wow scaleOutIn" />
+                                        <img src="images/team/andre.jpg" alt="Add Image Description" class="wow scaleOutIn" />
                                     </div>
                                     
                                     <div class="post-prev-3-intro">
@@ -686,7 +688,7 @@
                                         
                                         <div class="post-prev-3-info clearfix">
                                             <div class="float-start">
-                                                <a href="#"><img class="post-prev-3-author-img" width="30" height="30" src="landing/images/team/andre-88.jpg" alt="Image Description" /></a> <a href="#">André Vale</a>
+                                                <a href="/#"><img class="post-prev-3-author-img" width="30" height="30" src="images/team/andre-88.jpg" alt="Image Description" /></a> <a href="/#">André Vale</a>
                                             </div>
                                         </div>
                                         
@@ -714,10 +716,10 @@
                     
                     <!-- Decoration Dots -->
                     <div class="decoration-16 opacity-035 d-none d-md-block">
-                        <img src="landing/images/decoration-2.svg" alt="Image Description" />
+                        <img src="images/decoration-2.svg" alt="Image Description" />
                     </div>
                     <div class="decoration-17 opacity-035 d-none d-md-block">
-                        <img src="landing/images/decoration-2.svg" alt="Image Description" />
+                        <img src="images/decoration-2.svg" alt="Image Description" />
                     </div>
                     <!-- End Decoration Dots -->
                     
@@ -740,7 +742,7 @@
                                     
                                     <div class="form-tip">
                                         <i class="icon-info size-16"></i>
-                                        {{ __('By sending the form you agree to the')}} <a href="#">{{ __('Terms & Conditions')}}</a> {{ __('and')}} <a href="#"> {{ __('Privacy Policy')}}</a>.
+                                        {{ __('By sending the form you agree to the')}} <a href="/#">{{ __('Terms & Conditions')}}</a> {{ __('and')}} <a href="/#"> {{ __('Privacy Policy')}}</a>.
                                     </div>
                                     
                                     <div id="subscribe-result" role="region" aria-live="polite" aria-atomic="true"></div>
@@ -884,7 +886,7 @@
                                                 <!-- Inform Tip -->
                                                 <div class="form-tip w-100 pt-30 mt-sm-20">
                                                     <i class="icon-info size-16"></i>
-                                                    {{ __('All the fields are required. By sending the form you agree to the')}} <a href="#">{{ __('Terms & Conditions')}}</a> {{ __('and')}} <a href="#">{{ __('Privacy Policy')}}</a>.
+                                                    {{ __('All the fields are required. By sending the form you agree to the')}} <a href="/#">{{ __('Terms & Conditions')}}</a> {{ __('and')}} <a href="/#">{{ __('Privacy Policy')}}</a>.
                                                 </div>
                                                 <!-- End Inform Tip -->
                                                
@@ -914,7 +916,7 @@
                 
                 <!-- Background Shape -->
                 <div class="bg-shape-4">
-                    <img src="landing/images/bg-shape-4.svg" alt="" />
+                    <img src="images/bg-shape-4.svg" alt="" />
                 </div>
                 <!-- End Background Shape -->
                 
@@ -925,7 +927,7 @@
                         <div class="col-md-4 col-lg-3 text-gray mb-sm-50">
                             
                             <div class="mb-30">
-                                <img src="/landing/images/logo-dark.svg" alt="MedSpence Logo" />
+                                <img src="images/logo-dark.svg" alt="MedSpence Logo" />
                             </div>
                             
                             <p>
@@ -951,10 +953,10 @@
                                     <h3 class="fw-title">{{ __('Company')}}</h3>
                                     
                                     <ul class="fw-menu clearlist local-scroll">                                        
-                                        <li><a href="#about">{{ __('About Us')}}</a></li>
-                                        <li><a href="#services">{{ __('Service')}}</a></li>
-                                        <li><a href="#team">{{ __('Team')}}</a></li>
-                                        <li><a href="#contact">{{ __('Contact Us')}}</a></li>
+                                        <li><a href="/#about">{{ __('About Us')}}</a></li>
+                                        <li><a href="/#services">{{ __('Service')}}</a></li>
+                                        <li><a href="/#team">{{ __('Team')}}</a></li>
+                                        <li><a href="/#contact">{{ __('Contact Us')}}</a></li>
                                     </ul>
                                     
                                 </div>
@@ -995,8 +997,8 @@
                                     <h3 class="fw-title">{{ __('Legal')}}</h3>
                                     
                                     <ul class="fw-menu clearlist">                                     
-                                        <li><a href="#">{{ __('Privacy Policy')}}</a></li>
-                                        <li><a href="#">{{ __('Terms & Conditions')}}</a></li>
+                                        <li><a href="/#">{{ __('Privacy Policy')}}</a></li>
+                                        <li><a href="/#">{{ __('Terms & Conditions')}}</a></li>
                                     </ul>
                                     
                                 </div>
@@ -1020,7 +1022,7 @@
                             
                             <!-- Back to Top Link -->
                             <div class="local-scroll float-end mt-n20 mt-sm-10">
-                                <a href="#top" class="link-to-top color-light">                                
+                                <a href="/#top" class="link-to-top color-light">                                
                                     <i class="mi-arrow-up size-24"></i>
                                     <span class="visually-hidden">{{ __('Scroll to top')}}</span>
                                 </a>
@@ -1041,12 +1043,12 @@
         <!-- End Page Wrap -->      
         
         <!-- JS -->
-        <script src="/landing/js/jquery.min.js"></script>
-        <script src="/landing/js/bootstrap.bundle.min.js"></script>
-        <script src="/landing/js/plugins.js"></script>
-        <script src="/landing/js/jquery.ajaxchimp.min.js"></script>             
-        <script src="/landing/js/contact-form.js"></script>        
-        <script src="/landing/js/all.js"></script> 
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>             
+        <script src="js/contact-form.js"></script>        
+        <script src="js/all.js"></script> 
         <!-- End JS -->       
         
     </body>
