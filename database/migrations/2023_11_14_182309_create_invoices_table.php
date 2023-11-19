@@ -13,8 +13,6 @@ return new class extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->uuid('invoice_id')->primary();
-            $table->uuid('patient_id');
-            $table->foreign('patient_id')->references('patient_id')->on('patients');
             $table->enum('status', ['Paid', 'Unpaid']);
             $table->date('payment_date');
             $table->enum('payment_method', ['Cash', 'Card']);
