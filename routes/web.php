@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,22 +15,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('/app')->group(function () {
-    Route::get('/login', function () {
-        return view('app.sign-in');
-    })->name('login');
-    
-    Route::get('/register', function () {
-        return view('app.sign-up');
-    })->name('register');
-    
-    Route::get('/dashboard', function () {
-        return view('app.dashboard');
+
+    Route::middleware(['guest'])->group(function () {
+        Route::view('/login', 'app.sign-in')->name('login');
+        Route::post('/login',[AuthController::class, 'authenticate'])->name('login');
+        Route::view('/register', 'app.sign-up')->name('register');
     });
+
+    Route::middleware(['auth'])->group(function () {
+        Route::view('/dashboard', 'app.dashboard')->name('dashboard');
+        Route::get('/logout',[AuthController::class, 'logout'])->name('logout');
+    });
+
 });
 
-
-Route::prefix('{location?}')->middleware('location')->group(function () {
+Route::prefix('{location?}')->middleware(['guest', 'location'])->group(function () {
     Route::get('/', function () {
         return view('home');
-    });
+    })->name('home');
 });
