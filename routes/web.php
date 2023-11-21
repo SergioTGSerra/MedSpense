@@ -29,8 +29,17 @@ Route::prefix('/app')->group(function () {
 
 });
 
+Route::get('/terms-of-service', function () {
+    return view('landing.terms-of-service');
+})->name('terms-of-service');
+
+Route::get('/privacy-policy', function () {
+    return view('landing.privacy-policy');
+})->name('privacy-policy');
+
 Route::prefix('{location?}')->middleware(['guest', 'location'])->group(function () {
     Route::get('/', function () {
-        return view('home');
+        return view('landing.home');
     })->name('home');
+
 });
