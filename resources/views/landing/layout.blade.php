@@ -51,7 +51,7 @@
 
                     <!-- Logo -->
                     <div class="nav-logo-wrap position-static local-scroll">
-                        <a href="/#top" class="logo">
+                        <a href="/" class="logo">
                             <img src="images/logo-dark.svg" alt="Company Logo"/>
                         </a>
                     </div>

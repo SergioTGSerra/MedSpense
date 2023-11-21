@@ -16,11 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/app')->group(function () {
 
-    Route::middleware(['guest'])->group(function () {
-        Route::view('/login', 'app.sign-in')->name('login');
-        Route::post('/login',[AuthController::class, 'authenticate'])->name('login');
-        Route::view('/register', 'app.sign-up')->name('register');
-    });
+    Route::view('/login', 'app.sign-in')->name('login');
+    Route::post('/login',[AuthController::class, 'authenticate'])->name('login');
+    Route::view('/register', 'app.sign-up')->name('register');
 
     Route::middleware(['auth'])->group(function () {
         Route::view('/dashboard', 'app.dashboard')->name('dashboard');
@@ -37,9 +35,8 @@ Route::get('/privacy-policy', function () {
     return view('landing.privacy-policy');
 })->name('privacy-policy');
 
-Route::prefix('{location?}')->middleware(['guest', 'location'])->group(function () {
+Route::prefix('{location?}')->middleware(['location'])->group(function () {
     Route::get('/', function () {
         return view('landing.home');
     })->name('home');
-
 });
