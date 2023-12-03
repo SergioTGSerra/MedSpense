@@ -2,7 +2,7 @@
 <div class="app-header-logo d-flex flex-center">
     <!--begin::Logo image-->
     <a href="?page=index">
-        <img alt="Logo" src="assets/media/logos/demo-58.svg" class="mh-25px"/>
+        <img alt="Logo" src="http://localhost/landing/images/logo-dark.svg" class="mh-35px"/>
     </a>
     <!--end::Logo image-->
     <!--begin::Sidebar toggle-->
