@@ -19,6 +19,7 @@ return new class extends Migration
             $table->foreign('doctor_id')->references('doctor_id')->on('doctors');
             $table->longText('diagnosis');
             $table->longText('prescription');
+            $table->dateTime('appointment_date');
             $table->text('notes');
             $table->timestamps();
         });

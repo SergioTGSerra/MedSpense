@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('patients', function (Blueprint $table) {
             $table->uuid('patient_id')->primary();
             $table->foreign('patient_id')->references('user_id')->on('users');
+            $table->string('blood_type');
             $table->longText('medical_history');
             $table->string('insurance_information');
             $table->timestamps();
