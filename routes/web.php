@@ -21,22 +21,15 @@ Route::prefix('/app')->group(function () {
     Route::view('/register', 'app.sign-up')->name('register');
 
     Route::middleware(['auth'])->group(function () {
-        Route::view('/dashboard', 'app.dashboard')->name('dashboard');
+        require __DIR__.'/receptionist.php';
         Route::get('/logout',[AuthController::class, 'logout'])->name('logout');
     });
 
 });
 
-Route::get('/terms-of-service', function () {
-    return view('landing.terms-of-service');
-})->name('terms-of-service');
-
-Route::get('/privacy-policy', function () {
-    return view('landing.privacy-policy');
-})->name('privacy-policy');
+Route::view('/terms-of-service', 'app.sign-in')->name('terms-of-service');
+Route::view('/privacy-policy', 'landing.privacy-policy')->name('privacy-policy');
 
 Route::prefix('{location?}')->middleware(['location'])->group(function () {
-    Route::get('/', function () {
-        return view('landing.home');
-    })->name('home');
+    Route::view('/', 'landing.home')->name('home');
 });
