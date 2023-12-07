@@ -3,8 +3,8 @@
     <!--begin::Header-->
     <div class="card-header border-0 pt-5">
         <h3 class="card-title align-items-start flex-column">
-            <span class="card-label fw-bold fs-3 mb-1">Your Active Services</span>
-            <span class="text-muted mt-1 fw-semibold fs-7">Your most performing services are here.</span>
+            <span class="card-label fw-bold fs-3 mb-1">Next Appoitments</span>
+            <span class="text-muted mt-1 fw-semibold fs-7">Wait for the best patients with the best smile.</span>
         </h3>
         <div class="card-toolbar">
             <a href="#" class="btn btn-sm btn-light-primary">
