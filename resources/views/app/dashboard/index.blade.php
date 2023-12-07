@@ -9,24 +9,24 @@
     <div id="kt_app_content_container" class="app-container  container-fluid ">
         <!--begin::Row-->
         <div class="row g-5 g-xl-8">
-			@include('app.dashboard.cards')
+			@relativeInclude('cards')
         </div>
         <!--end::Row-->
         <!--begin::Row-->
         <div class="row g-5 g-xl-10 g-xl-10">
-			@include('app.dashboard.appointments')
+			@relativeInclude('appointments')
         </div>
         <!--end::Row-->
         <!--begin::Row-->
         <div class="row g-5 g-xl-10">
             <!--begin::Col-->
             <div class="col-xxl-6 mb-xxl-10">
-				@include('app.dashboard.calendar')
+				@relativeInclude('calendar')
             </div>
             <!--end::Col-->
             <!--begin::Col-->
             <div class="col-xxl-6 mb-5 mb-xl-10">
-				@include('app.dashboard.unpaid_invoices')
+				@relativeInclude('unpaid_invoices')
             </div>
             <!--end::Col-->
         </div>
