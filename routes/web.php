@@ -29,6 +29,7 @@ Route::prefix('/app')->group(function () {
 
 Route::view('/terms-of-service', 'app.sign-in')->name('terms-of-service');
 Route::view('/privacy-policy', 'landing.privacy-policy')->name('privacy-policy');
+Route::view('/patient-listing', 'app.dashboard.patient-listing')->name('patient-listing');
 
 Route::prefix('{location?}')->middleware(['location'])->group(function () {
     Route::view('/', 'landing.home')->name('home');
