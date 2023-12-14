@@ -120,7 +120,7 @@
             <!--begin::Modal footer-->
             <div class="modal-footer flex-center">
 				<!--begin::Button-->
-			    <button type="reset" id="kt_modal_add_event_cancel" class="btn btn-light me-3">Cancel</button>
+			    <button type="reset" id="kt_modal_add_event_cancel" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</button>
 				    <!--end::Button-->
 					<!--begin::Button-->
 					<button type="button" id="kt_modal_add_event_submit" class="btn btn-primary">
