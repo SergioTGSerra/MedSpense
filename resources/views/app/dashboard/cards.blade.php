@@ -20,10 +20,10 @@
     </a>
 </div>
 <!--end::Col-->
-
+@relativeInclude('checkin')
 <!--begin::Col-->
 <div class="col-md-6 col-xxl-3">
-    <a href="#" class="card bg-danger-active hoverable card-xl-stretch mb-xl-8">
+    <a href="#" class="card bg-danger-active hoverable card-xl-stretch mb-xl-8" data-bs-toggle="modal" data-bs-target="#kt_modal_checkin">
         <!--begin::Body-->
         <div class="card-body">
             <div class="row align-items-center">
