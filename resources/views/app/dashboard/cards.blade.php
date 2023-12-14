@@ -50,7 +50,7 @@
 
 <!--begin::Col-->
 <div class="col-md-6 col-xxl-3">
-    <a href="#" class="card bg-info-active hoverable card-xl-stretch mb-xl-8">
+    <a href="/patient-listing" class="card bg-info-active hoverable card-xl-stretch mb-xl-8">
         <!--begin::Body-->
         <div class="card-body">
             <div class="row align-items-center">
