@@ -26,10 +26,17 @@
                         <div class="row">
                             <!--begin::Select-->
                             <div class="col-md-6 mb-8">
-							    <label class="fs-6 fw-semibold mb-2 required">Doctor</label>
-                                <select class="form-select" data-control="select2" data-placeholder="Select the doctor" data-allow-clear="true" multiple="multiple">
-                                    <option value="Computers">Computers</option>
-                                </select>
+							    <label class="fs-6 fw-semibold mb-2 required">Patient</label>
+                                <!--begin::Col-->
+                                <div class="col-lg-8 fv-row">
+                                    <!--begin::Input-->
+                                    <select name="language" aria-label="Select a Language" data-control="select2" data-placeholder="Select a patient..." class="form-select form-select-solid form-select-lg">
+                                        <option value="">Select a Patient...</option>
+                                        <option data-kt-flag="flags/indonesia.svg" value="id">Emma</option>
+                                    </select>
+                                    <!--end::Input-->
+                                </div>
+                                <!--end::Col-->
                             </div>
                             <!--end::Select-->
                         </div>
